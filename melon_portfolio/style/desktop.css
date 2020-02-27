@@ -1,0 +1,149 @@
+/* 19,2--- */
+@media screen and (min-width: 960px) {
+	body {font:300 1.0416vw 'HelveticaNeueCyr',Arial;line-height:1.25vw;}
+
+	.fl-row {margin:0 -0.5208vw;}
+	.col {padding:0 0.5208vw;}
+
+	.page-bl {min-width:13.5416vw;max-width:73.4375vw;padding:0 2.2916vw;}
+
+	.site-header::before {top:8.4375vw;left:-0.8854vw;height:56.1979vw;}
+	.logo-wrap {max-width:27.7083vw;padding:9.4791vw 0 0 0;}
+	.logo strong {left:-0.2083vw;font-size:3.6458vw;line-height:3.125vw;letter-spacing:-0.052vw;padding:0 0 0.4166vw 0;}
+	.logo span {font-size:1.1979vw;line-height:1.5625vw;letter-spacing:0.4166vw;}
+
+	.head-m::before {width:0.9895vw;height:4.7395vw;margin:2.4479vw 0 0 0;}
+	.head-m .fl-row {min-height:61.25vw;}
+
+	.head-s {min-height:24.375vw;}
+	.head-s .title {font-size:3.4723vw;line-height:3.6458vw;}
+	.head-s .title strong {right:-8.0729vw;width:24.375vw;height:4.1666vw;margin:-2.0833vw 0 0 0;}
+
+	.scroll-line {height:51.9791vw;font-size:1.302vw;line-height:1.5625vw;border-left:solid 0.1041vw #a20a33;}
+	.scroll-line .txt {left:0.5208vw;letter-spacing:0.4166vw;}
+	.scroll-line span {width:1.5625vw;height:1.5625vw;}
+
+	.site-content p {padding-bottom:1.25vw;}
+	.site-content ul,.site-content ol {margin:0 0 1.25vw 1.25vw;}
+	.site-content ul ul,.site-content ul ol,.site-content ol ul,.site-content ol ol {margin-bottom:0;}
+
+	.site-footer .fl-row {min-height:57.4479vw;}
+	.logo-footer {top:-8.0208vw;}
+	.logo-footer img {width:18.5416vw;}
+
+	.h-1 {font:bold 3.4723vw 'HelveticaNeueCyr',Arial;line-height:100%;padding:0 0 1.875vw 0;}
+
+	.area-img img {max-height:30.3645vw;}
+
+	.area-gall::before {top:-3.0208vw;left:-3.0208vw;padding:0 0.8333vw 0 0;}
+	.area-gall .swiper,
+	.area-gall .swiper-slide img {height:28.177vw;}
+
+	.swiper-gallery .swiper-slide img {height:16.927vw;}
+
+	.box-imgs {padding:2.3437vw 0 2.6041vw 0;}
+	.box-imgs img {height:23.177vw;}
+
+	.about-box {padding:3.4375vw 3.3333vw 2.7083vw 3.3333vw;background-size:auto 43.125vw;}
+
+	.gall-row {margin:0 -2.2916vw;}
+	.gall-row .col {padding:0 2.2916vw 4.5833vw 2.2916vw;}
+	.gall-row img {height:28.6458vw;}
+
+	.txt-gall {padding:2.9166vw 0 0 0;}
+	.txt-gall p {width:14.7395vw;padding:0 0 1.5625vw 0 !important;}
+
+	.s-name {right:-11.9791vw;bottom:9.375vw;}
+	.s-name .h-1 {width:20.8333vw;height:20.8333vw;}
+
+	/* --- */
+	.area-chehof {padding:12.0833vw 0 9.2187vw 0;}
+	.area-chehof .fl-row {min-height:28.2812vw;}
+	.area-chehof .txt {top:1.6145vw;width:34.1145vw;margin:0 0 0 4.375vw;}
+	.area-chehof .area-gall {width:38.5416vw;}
+
+	/* --- */
+	.area-nornickel {padding:0 0 9.2187vw 0;}
+
+	/* --- */
+	.area-bella {margin:0 0 11.0937vw 0;}
+	.area-bella .fl-row {min-height:68.3854vw;}
+	.area-bella .area-img img {width:49.7916vw;max-height:52.0833vw;}
+	.area-bella .swiper {width:45.4166vw;}
+	.area-bella .swiper,
+	.area-bella .swiper-slide img {height:34.0625vw;} 
+	.area-bella .txt {top:-4.7916vw;left:-2.9166vw;max-width:33.3333vw;}
+	.area-bella .txt img {margin:3.3333vw 0 0 0;}
+
+	/* --- */
+	.area-donstroi {padding:0 0 7.2395vw 0;}
+	.area-donstroi::before {top:-16.7708vw;height:45.8333vw;}
+	.area-donstroi .about-box {max-width:33.5416vw;padding:4.3229vw 3.8541vw 2.3437vw 3.8541vw;}
+	.area-donstroi .box-imgs {padding-top:2.9166vw;}
+
+	/* --- */
+	.area-diksi {padding:0 0 2.6562vw 0;}
+	.area-diksi .txt {padding:0 0 4.427vw 0;}
+	.area-diksi .txt p {max-width:54.1666vw;}
+
+	/* --- */
+	.area-azimut {padding:0 0 11.1458vw 0;}
+	.area-azimut .about-box {padding:5.3645vw 0 2.1875vw 0;background-size:auto 32.9166vw;}
+	.area-azimut .about-box p {max-width:54.1666vw;}
+	.area-azimut .box-imgs {max-width:58.6979vw;padding:3.6458vw 0 2.6041vw 0;}
+
+	/* --- */
+	.area-elari {padding:0 0 9.2187vw 0;}
+	.area-elari .area-img img {height:32.0312vw;}
+	.area-elari .txt {right:-2.1875vw;max-width:32.0312vw;min-height:32.0312vw;padding:0.2604vw 0 3.0208vw 0;}
+	.area-elari .box-imgs {max-width:66.3541vw;margin:0 auto 2.6041vw auto;}
+
+	/* --- */
+	.area-temp::before {width:0.1041vw;height:15.1041vw;margin:-7.552vw 0 0 -0.052vw;}
+	.area-temp .fl-row {min-height:24.375vw;}
+	.area-temp .h-1 {letter-spacing:-0.1041vw;}
+
+	/* --- */
+	.area-volte {padding:9.6354vw 0 5.9895vw 0;}
+	.area-volte::before {top:9.6354vw;width:13.2812vw;height:28.0729vw;}
+	.area-volte .fl-row {padding:0 0 3.9583vw 0;}
+	.area-volte .m-img {margin:0 0 0 -13.3854vw;}
+	.area-volte .m-img img {height:49.6875vw;}
+	.area-volte .txt {left:3.9062vw;max-width:26.5625vw;letter-spacing:-0.0104vw;padding:11.6666vw 0 0 0;margin:0 -2.3437vw 0 0;}
+	.area-volte .h-1 {letter-spacing:-0.1041vw;}
+	.area-volte .box-imgs {padding:0 0 3.9583vw 0;}
+	.area-volte .box-imgs img {height:20.7812vw;}
+
+	/* --- */
+	.area-corus .area-img img {max-height:51.5625vw;}
+	.area-corus .box-imgs {padding:0 0 2.6041vw 0;margin:0 -1.5625vw;}
+	.area-corus .col {padding:0 1.5625vw;}
+	.corus-wrap {padding:6.5104vw 0 1.875vw 0;background-size:auto 38.6979vw;}
+	.corus-wrap .txt {max-width:33.3333vw;min-height:20.7812vw;}
+
+	/* --- */
+	.area-savencia {padding:93.2291vw 0 5.4687vw 0;background-position:left 56.4583vw;background-size:auto 86.5625vw;}
+	.area-savencia::before {top:7.3958vw;height:69.8958vw;}
+	.area-savencia::after {top:59.7916vw;height:50.4687vw;}
+	.area-savencia .box-imgs {padding:0 0 2.6041vw 0;margin:0 -2.0833vw;}
+	.area-savencia .col {padding:0 2.0833vw;}
+	.area-savencia .txt {max-width:34.8958vw;min-height:26.1979vw;}
+
+	/* --- */
+	.pk-wrap {padding:6.3541vw 0 0 0;background-size:auto 38.6979vw;}
+	.pk-wrap .txt {max-width:64.5833vw;padding:0 0 1.9791vw 0;}
+	.pk-wrap .m-img {padding:0 0 1.4583vw 0;}
+	.pk-gall {margin:0 -2.0833vw;}
+	.pk-gall .col {padding:0 2.0833vw;}
+	.pk-gall p {padding:0 0 2.6041vw 0;}
+
+	/* --- */
+	.area-sk {padding:8.0729vw 0 7.2916vw 0;background-size:auto 43.2291vw;}
+	.area-sk.donstroi2 {padding:10.7812vw 0 7.9166vw 0;}
+	.area-sk .txt {padding:0 0 4.9479vw 0;}
+	.area-sk .m-img {max-width:73.3333vw;padding:0 0 6.0937vw 0;}
+	.dn-gall {margin:0 -1.8229vw;}
+	.dn-gall .col {padding:0 1.8229vw;}
+	.dn-gall p {padding:0 0 2.2916vw 0;}
+	.dn-gall img {height:19.5833vw;}
+}

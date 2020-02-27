@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <title>Melon</title>
+    <link rel="stylesheet" media="all" href="style/body.css?v=1" type="text/css" />
+    <link rel="stylesheet" media="all" href="style/mobile.css?v=1" type="text/css" />
+    <link rel="stylesheet" media="all" href="style/slider.css?v=1" type="text/css" />
+    <link rel="stylesheet" media="all" href="style/popups.css?v=1" type="text/css" />
+    <script src="js/jquery-all.js?v=1"></script>
+    <script src="js/google-translate.js"></script>
+    <script src="http://translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
+    <link href="images/favicon.ico?v=1" rel="SHORTCUT ICON" />
+</head>
+
+<body>
+    <!-- <body class="show-page"> -->
+    <div class="start-wrap" style="opacity:0;"><video id="video" width="320" height="320" muted="muted" preload="auto" autoplay muted playsinline></video><button class="play">play</button></div>
+    <script>
+        $(document).ready(function() {
+            var vid = document.getElementById("video"),
+                pauseButton = document.getElementById("play");
+
+            function vidFade() {
+                vid.classList.add("stopfade");
+            }
+            vid.addEventListener('ended', function() {
+                vid.pause();
+                vidFade();
+            });
+            pauseButton.addEventListener("click", function() {
+                vid.classList.toggle("stopfade");
+                if (vid.paused) {
+                    vid.play();
+                    pauseButton.innerHTML = "Pause";
+                } else {
+                    vid.pause();
+                    pauseButton.innerHTML = "Paused";
+                }
+            });
+        });
+    </script>
+    <div class="page-width">
+        <span class="mobile-sbm"><i></i><i></i><i></i></span>
+        <div class="mobile-site-nav">
+            <ul class="site-nav">
+                <li><a class="scroll-link" href="#area-rew">мы</a></li>
+                <li><a href="melon_portfolio/index.html">кейсы</a></li>
+                <li><a class="scroll-link" href="#footer">контакты</a></li>
+            </ul>
+        </div>
+        <header class="site-header">
+            <div class="page-bl">
+                <div class="fl-row">
+                    <div class="col">
+                        <div class="logo-wrap">
+                            <a class="logo" href="/"><img src="images/logo.png?v=1" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <ul class="site-nav">
+                            <li><a class="scroll-link" href="#area-rew">мы</a></li>
+                            <li><a href="melon_portfolio/index.html">кейсы</a></li>
+                            <li><a class="scroll-link" href="#footer">контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="lang-nav">
+                            <li><a data-google-lang="ru" href="#">Ru</a></li>
+                            <li><a data-google-lang="en" href="#">En</a></li>
+                            <li><a data-google-lang="cs" href="#">Ch</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="site-content">
+            <section class="area-main animate-bl">
+                <div class="page-bl">
+                    <div class="fl-row">
+                        <div class="col">
+                            <ul class="main-nav tabs-nav">
+                                <li><a href="#tab-01">Нейминг</a>
+                                    <div class="nav-tab">
+                                        <blockquote class="sub">
+                                            <p>Основа любой коммуникации – знакомство и представление собеседников. Узнаваемое название и запоминающийся слоган – неотъемлемая часть коммуникации с клиентами и партнерами. Мы разрабатываем успешные нейминг,
+                                                слоганы и продающие тексты.</p>
+                                        </blockquote>
+                                    </div>
+                                </li>
+                                <li><a href="#tab-02">Brandbook</a>
+                                    <div class="nav-tab">
+                                        <blockquote class="sub">
+                                            <p>Философия бренда, стандарты использования айдентики и принципы визуальной коммуникации. Brandbook необходимая составляющая в коммуникации бренда с коммерческими партнерами и типографией. </p>
+                                        </blockquote>
+                                    </div>
+                                </li>
+                                <li><a href="#tab-03">POS-продукция</a>
+                                    <div class="nav-tab">
+                                        <blockquote class="sub">
+                                            <p>Дизайн-решения, которые рождают эмоции. Мы создаем POS-материалы с максимальной долей информативности, работающие на привлечение новых клиентов и лояльность постоянных. </p>
+                                        </blockquote>
+                                    </div>
+                                </li>
+                                <li><a href="#tab-04">Дизайн упаковки</a>
+                                    <div class="nav-tab">
+                                        <blockquote class="sub">
+                                            <p>Оригинальная упаковка и правильная визуальная концепция. Подобный подход легко привлечет покупателя. Мы разработаем упаковку, способную создать положительный образ компании и выделить ваш бренд на потребительском
+                                                рынке. </p>
+                                        </blockquote>
+                                    </div>
+                                </li>
+                                <li><a href="#tab-05">Digital-дизайн</a>
+                                    <div class="nav-tab">
+                                        <blockquote class="sub">
+                                            <p>Дизайн-идея, способная изменить представления о вашей компании. Мы работаем над интерфейсом и анимацией. Наши принципы взаимодействия с пользователем направлены на повышение уровня коммуникаций в сферах B2B,
+                                                B2C,G2B и B2G.</p>
+                                        </blockquote>
+                                    </div>
+                                </li>
+                                <li><a href="#tab-06">Создание сайтов</a>
+                                    <div class="nav-tab">
+                                        <blockquote class="sub">
+                                            <p>Сайт – ключевая рекламная площадка бренда в медиапространстве. Профессиональный подход способен не только увеличить прибыль компании, но и снизить затраты на рекламу. Мы занимаемся проектирование web-платформ
+                                                любой сложности. </p>
+                                        </blockquote>
+                                    </div>
+                                </li>
+                                <li><a href="#tab-07">Создание презентаций</a>
+                                    <div class="nav-tab">
+                                        <blockquote class="sub">
+                                            <p>Комплексный подход к визуализации бренда положительно влияет на продажи, позиционирование и коммуникацию компании с клиентами и партнерами. Качественная презентация укрепляет имидж компании и работает на развитие
+                                                вашего бренда.</p>
+                                        </blockquote>
+                                    </div>
+                                </li>
+                                <li><a href="#tab-08">Моушн-дизайн</a>
+                                    <div class="nav-tab">
+                                        <blockquote class="sub">
+                                            <p>Анимационная графика всегда привлекает новую аудиторию. Внедрение визуальный эффектов на веб-платформы стимулирует рост интереса к продукции компании. </p>
+                                        </blockquote>
+                                    </div>
+                                </li>
+                                <li><a href="#tab-09">Корпоративная атрибутика</a>
+                                    <div class="nav-tab">
+                                        <blockquote class="sub">
+                                            <p>Фирменный стиль работает на имидж и репутацию бренда на рынке. Мы делаем качественную айдентику для внутреннего использования и оригинальные корпоративные подарки для ваших бизнес-партнеров. </p>
+                                        </blockquote>
+                                    </div>
+                                </li>
+                                <li><a href="#tab-10">Интернет-маркетинг</a>
+                                    <div class="nav-tab">
+                                        <blockquote class="sub">
+                                            <p>SMM, Target и вирусная реклама – современные рычаги воздействия на потенциальных клиентов. Мы разрабатываем работающую стратегию коммуникации и выводим ваш бренд на рынок медиа-рекламы. </p>
+                                        </blockquote>
+                                    </div>
+                                </li>
+                                <li><a href="#tab-11">PR-кампании</a>
+                                    <div class="nav-tab">
+                                        <blockquote class="sub">
+                                            <p>С помощью креативных методик и стратегического планирования мы разрабатываем запоминающиеся PR-акции и мероприятия. Вирусная реклама в режиме реального времени.</p>
+                                        </blockquote>
+                                    </div>
+                                </li>
+                                <li><a href="#tab-12">Бренд Консалтинг</a>
+                                    <div class="nav-tab">
+                                        <blockquote class="sub">
+                                            <p>Аудит и экспертиза действующего бренда. Мы уделяем особое внимание креативным концепциям, работающим на имя бренда. </p>
+                                        </blockquote>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tabs-col col">
+                            <div class="tab-bl focus" style="display:block;">
+                                <blockquote class="sub">
+                                    <p>Мы уникальная команда талантливых людей с различными навыками. Мы помогаем запускать и развивать маркетинговые кампании, через стратегию бренда, разработку идентичности и цифрового дизайна продукта. Мы знаем, что для
+                                        этого нужно.</p>
+                                </blockquote>
+                            </div>
+                            <div class="tab-bl" id="tab-01" style="display:none;">
+                                <blockquote class="sub">
+                                    <p>Основа любой коммуникации – знакомство и представление собеседников. Узнаваемое название и запоминающийся слоган – неотъемлемая часть коммуникации с клиентами и партнерами. Мы разрабатываем успешные нейминг, слоганы
+                                        и продающие тексты.</p>
+                                </blockquote>
+                            </div>
+                            <div class="tab-bl" id="tab-02" style="display:none;">
+                                <blockquote class="sub">
+                                    <p>Философия бренда, стандарты использования айдентики и принципы визуальной коммуникации. Brandbook необходимая составляющая в коммуникации бренда с коммерческими партнерами и типографией. </p>
+                                </blockquote>
+                            </div>
+                            <div class="tab-bl" id="tab-03" style="display:none;">
+                                <blockquote class="sub">
+                                    <p>Дизайн-решения, которые рождают эмоции. Мы создаем POS-материалы с максимальной долей информативности, работающие на привлечение новых клиентов и лояльность постоянных. </p>
+                                </blockquote>
+                            </div>
+                            <div class="tab-bl" id="tab-04" style="display:none;">
+                                <blockquote class="sub">
+                                    <p>Оригинальная упаковка и правильная визуальная концепция. Подобный подход легко привлечет покупателя. Мы разработаем упаковку, способную создать положительный образ компании и выделить ваш бренд на потребительском рынке.
+                                    </p>
+                                </blockquote>
+                            </div>
+                            <div class="tab-bl" id="tab-05" style="display:none;">
+                                <blockquote class="sub">
+                                    <p>Дизайн-идея, способная изменить представления о вашей компании. Мы работаем над интерфейсом и анимацией. Наши принципы взаимодействия с пользователем направлены на повышение уровня коммуникаций в сферах B2B, B2C,G2B
+                                        и B2G.</p>
+                                </blockquote>
+                            </div>
+                            <div class="tab-bl" id="tab-06" style="display:none;">
+                                <blockquote class="sub">
+                                    <p>Сайт – ключевая рекламная площадка бренда в медиапространстве. Профессиональный подход способен не только увеличить прибыль компании, но и снизить затраты на рекламу. Мы занимаемся проектирование web-платформ любой
+                                        сложности. </p>
+                                </blockquote>
+                            </div>
+                            <div class="tab-bl" id="tab-07" style="display:none;">
+                                <blockquote class="sub">
+                                    <p>Комплексный подход к визуализации бренда положительно влияет на продажи, позиционирование и коммуникацию компании с клиентами и партнерами. Качественная презентация укрепляет имидж компании и работает на развитие вашего
+                                        бренда.
+                                    </p>
+                                </blockquote>
+                            </div>
+                            <div class="tab-bl" id="tab-08" style="display:none;">
+                                <blockquote class="sub">
+                                    <p>Анимационная графика всегда привлекает новую аудиторию. Внедрение визуальный эффектов на веб-платформы стимулирует рост интереса к продукции компании. </p>
+                                </blockquote>
+                            </div>
+                            <div class="tab-bl" id="tab-09" style="display:none;">
+                                <blockquote class="sub">
+                                    <p>Фирменный стиль работает на имидж и репутацию бренда на рынке. Мы делаем качественную айдентику для внутреннего использования и оригинальные корпоративные подарки для ваших бизнес-партнеров. </p>
+                                </blockquote>
+                            </div>
+                            <div class="tab-bl" id="tab-10" style="display:none;">
+                                <blockquote class="sub">
+                                    <p>SMM, Target и вирусная реклама – современные рычаги воздействия на потенциальных клиентов. Мы разрабатываем работающую стратегию коммуникации и выводим ваш бренд на рынок медиа-рекламы. </p>
+                                </blockquote>
+                            </div>
+                            <div class="tab-bl" id="tab-11" style="display:none;">
+                                <blockquote class="sub">
+                                    <p>С помощью креативных методик и стратегического планирования мы разрабатываем запоминающиеся PR-акции и мероприятия. Вирусная реклама в режиме реального времени.</p>
+                                </blockquote>
+                            </div>
+                            <div class="tab-bl" id="tab-12" style="display:none;">
+                                <blockquote class="sub">
+                                    <p>Аудит и экспертиза действующего бренда. Мы уделяем особое внимание креативным концепциям, работающим на имя бренда. </p>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="area-box animate-bl">
+                <div class="page-bl">
+                    <div class="box-main">
+                        <div class="txt">
+                            <div class="h-main">Мы делаем вкус</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <a class="area-bl bg portf-sbm animate-bl" href="melon_portfolio/index.html">
+                <div class="page-bl">
+                    <h3 class="h-3">портфолио</h3>
+                </div>
+            </a>
+            <section class="area-brands animate-bl">
+                <div class="page-bl">
+                    <h2 class="h-2">Среди наших кейсов есть работы для:</h2>
+                </div>
+
+                <div class="swiper swiper-brands">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/brands/Azimut_hotels_Logo_Corp_V.png?v=1" alt=""></div>
+                        <div class="swiper-slide"><img src="images/brands/Bella-01.png?v=1" alt=""></div>
+                        <div class="swiper-slide"><img src="images/brands/logo-bazar.png?v=1" alt=""></div>
+
+                        <div class="swiper-slide"><img src="images/brands/logo-nornikel.png?v=1" alt=""></div>
+                        <div class="swiper-slide"><img src="images/brands/logo_ciam_color.png?v=1" alt=""></div>
+                        <div class="swiper-slide"><img src="images/brands/logotip-rosatom.png?v=1" alt=""></div>
+
+                        <div class="swiper-slide"><img src="images/brands/group-1.png?v=1" alt=""></div>
+                        <div class="swiper-slide"><img src="images/brands/layer-1.png?v=1" alt=""></div>
+                        <div class="swiper-slide"><img src="images/brands/cpo.png?v=1" alt=""></div>
+                    </div>
+                    <div class="sw-btns-bl"></div>
+                </div>
+                <script>
+                    var swiper = new Swiper('.swiper-brands', {
+                        slidesPerView: 'auto',
+                        spaceBetween: 20,
+                        centeredSlides: true,
+                        loop: true,
+                        speed: 800,
+                        autoplay: {
+                            delay: 1500,
+                            disableOnInteraction: false,
+                        },
+                        breakpoints: {
+                            720: {
+                                spaceBetween: 20,
+                            },
+                            960: {
+                                spaceBetween: 40,
+                            },
+                            1140: {
+                                spaceBetween: 60,
+                            },
+                        },
+                        on: {
+                            init() {
+                                this.el.addEventListener('mouseenter', () => {
+                                    this.autoplay.stop();
+                                });
+
+                                this.el.addEventListener('mouseleave', () => {
+                                    this.autoplay.start();
+                                });
+                            }
+                        },
+                    });
+                </script>
+            </section>
+            <section class="area-order bg animate-bl">
+                <div class="page-bl">
+                    <div class="order-wrap">
+                        <div class="ord-sbm-bl">
+                            <div class="ord-sbm">заказать проект</div>
+                        </div>
+                        <div class="ord-form" style="display:none;">
+                            <form method="POST" action="">
+                                <div class="fl-row">
+                                    <div class="col">
+                                        <div class="inp-bl"><input type="text" value="" placeholder="ФИО"></div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="inp-bl"><input type="tel" value="" placeholder="Номер телефона"></div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="inp-bl"><input type="email" value="" placeholder="Почта"></div>
+                                    </div>
+                                </div>
+                                <div class="fl-row">
+                                    <div class="col">
+                                        <div class="inp-bl"><textarea placeholder="Комментарии"></textarea></div>
+                                    </div>
+                                </div>
+                                <div class="result">
+                                    <div class="col">
+                                        <label class="file-load">
+											<div class="file-name"><p>Прикрепить файл</p></div>
+											<div class="file-icon"></div>
+											<input type="file" value="">
+										</label>
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn">Заказать</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="ord-result" style="display:none;">
+                            <p>Спасибо, что выбрали нас, в ближайшее время мы с вами свяжемся.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="area-bl area-quote animate-bl" id="area-rew">
+                <div class="page-bl">
+                    <div class="quote-bl">
+                        <h2 class="h-2">Из интервью гуру PR<br />и маркетинговых технологий:</h2>
+                        <blockquote>
+                            <p>Я не так часто бываю в России, но эта молодая и дерзкая команда почему-то отложилась в моем сердце.<br />И дело не в проектах, которые они мне продемонстрировали на одной из выставок, а в их подходе.<br />Да, в России сложный
+                                клиент с точки зрения маркетинговой составляющий и здесь надо быть «hell hound», но к моему великому удивлению эти ребята меня по-настоящему поразили – искренность, благородство, неповторимость и все это в сочетании с бешенным
+                                творческим креативом способным решать проблемы бизнеса разного уровня. В Италии про них бы сказали: «квадратные головы». Я уверена о них в скором времени узнает весь мир, ведь такими качествами и должны обладать лидеры
+                                современного маркетинга.</p>
+                        </blockquote>
+                        <div class="author">
+                            <p>С уважением,<br />Barbara Peski</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="site-footer animate-bl" id="footer">
+            <div class="page-bl">
+                <div class="foot-main fl-row">
+                    <div class="col col-logo">
+                        <div class="logo-wrap">
+                            <a class="logo" href="/"><img src="images/logo.png?v=1" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="foot-nav fl-row">
+                            <div class="col">
+                                <div class="anim-bl">
+                                    <p>melon.su принадлежит</p>
+                                    <p>корпорации “МЫ-concern”</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="anim-bl">
+                                    <ul>
+                                        <p><a href="mailto:">we@melon.su</a></p>
+                                        <p><a href="tel:">+7 495 956 94 42</a></p>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="anim-bl">
+                                    <p>г. Москва, пр. Вернадского 41, стр.1</p>
+                                    <p>г.Дмитров, ул. Загорская 24</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot-info">
+                <div class="page-bl">
+                    <div class="fl-row">
+                        <div class="col">бренд-проекты.</div>
+                        <div class="col">дикие идеи.</div>
+                        <div class="col">вкусный дизайн.</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- POPUPS -->
+        <div class="popups-wrap"></div>
+        <span class="up-link"></span>
+    </div>
+    <script src="js/scripts.js?v=1"></script>
+    <link rel="stylesheet" media="all" href="style/fonts.css?v=1" type="text/css" />
+</body>
+
+</html>
